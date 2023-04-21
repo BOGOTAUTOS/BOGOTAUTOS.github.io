@@ -79,40 +79,83 @@ header {
     align-items: flex-start;
   }
 /* redes */
-main.Redes {
-    background-color: #f2f2f2;
-    color: #333;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 800px;
-    font-family: Arial, sans-serif;
-    font-size: 1.2em;
+
+/* Estilos para el contenedor interno de la sección de contacto */
+.contenedor {
+  width: 80%;
+  margin: auto;
+}
+
+/* Estilos para el título de la sección de contacto */
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+/* Estilos para los cuadros de información de contacto */
+.contacto-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.contacto-info div {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  flex-basis: calc(50% - 20px);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contacto-info div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+}
+
+.contacto-info div h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #4285F4;
+}
+
+.contacto-info div p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.contacto-info div:first-of-type {
+  margin-right: 40px;
+}
+.contacto-info div:nth-last-of-type(2) {
+  margin-left: 40px;
+}
+.contacto-info div:last-of-type {
+  margin-left: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .contacto-info {
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
-  main.Redes h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
+  .contacto-info div {
+    margin: 10px;
+    flex-basis: 100%;
   }
   
-  main.Redes p {
-    line-height: 1.5;
-    margin-bottom: 20px;
+  .contacto-info div:last-of-type {
+    margin-left: 0;
   }
-  
-  main.Redes a {
-    color: #ff6600;
-    text-decoration: none;
-  }
-  
-  main.Redes a:hover {
-    text-decoration: underline;
-  }
+}
   /* nav */
   nav {
-    background-color: #444;
+    background-color: #333;
     color: #fff;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
   }
   
@@ -154,3 +197,26 @@ footer {
     margin: 0;
   }
 
+.fa-facebook {
+    font-size: 5em;
+  
+}
+.fa-whatsapp {
+  font-size: 5em;
+  color: #37bc4a;
+
+}
+.fa-google {
+  font-size: 5em;
+  background-image: linear-gradient(to right, #ea4335, #fbbc05, #34a853, #4285f4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.fa-instagram {
+  font-size: 5em;
+  background-image: linear-gradient(to right, #fed530, #fd7a23, #fc136b, #d11dc3, #7643f6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
