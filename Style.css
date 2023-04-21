@@ -1,0 +1,156 @@
+/* Estilos para el encabezado */
+header {
+    background-image: url('ruta/a/la/imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  header p {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para la sección de blog */
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
+  
+  section article {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  section article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  section article img {
+    width: 100%;
+    height: auto;
+  }
+  
+  section article h2 {
+    margin: 20px;
+    font-size: 1.8em;
+    text-align: center;
+  }
+  
+  section article p {
+    margin: 20px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  body {
+    background-color: aliceblue;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+/* redes */
+main.Redes {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+  }
+  
+  main.Redes h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  main.Redes p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  main.Redes a {
+    color: #ff6600;
+    text-decoration: none;
+  }
+  
+  main.Redes a:hover {
+    text-decoration: underline;
+  }
+  /* nav */
+  nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #f9f9f9;
+  }
+  
+  
+  
+  
+
+  /* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
